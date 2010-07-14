@@ -1,0 +1,665 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		D292D1EE0FFC061D006CC56C /* TestRunnerResourceScrubber */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = D292D1F80FFC067F006CC56C /* Build configuration list for PBXAggregateTarget "TestRunnerResourceScrubber" */;
+			buildPhases = (
+				D292D1F70FFC0640006CC56C /* ShellScript */,
+			);
+			dependencies = (
+				D292D1F30FFC0623006CC56C /* PBXTargetDependency */,
+			);
+			name = TestRunnerResourceScrubber;
+			productName = TestRunnerResourceScrubber;
+		};
+		D292D20C0FFC0783006CC56C /* UnitTestRunner */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = D292D21A0FFC07C0006CC56C /* Build configuration list for PBXAggregateTarget "UnitTestRunner" */;
+			buildPhases = (
+			);
+			dependencies = (
+				D292D2110FFC078A006CC56C /* PBXTargetDependency */,
+				D292D2130FFC078C006CC56C /* PBXTargetDependency */,
+			);
+			name = UnitTestRunner;
+			productName = UnitTestRunner;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		D207D904111CEA4100094C32 /* TestUnifiedSuiteRunResults.h in Headers */ = {isa = PBXBuildFile; fileRef = D22CAB4A111CB0F900C76A5A /* TestUnifiedSuiteRunResults.h */; };
+		D207D905111CEA4100094C32 /* TestUnifiedSuiteRunResults.m in Sources */ = {isa = PBXBuildFile; fileRef = D22CAB4B111CB0F900C76A5A /* TestUnifiedSuiteRunResults.m */; };
+		D207D906111CEA4100094C32 /* TestUnifiedTestCaseRunResult.h in Headers */ = {isa = PBXBuildFile; fileRef = D22CAB4C111CB0F900C76A5A /* TestUnifiedTestCaseRunResult.h */; };
+		D207D907111CEA4100094C32 /* TestUnifiedTestCaseRunResult.m in Sources */ = {isa = PBXBuildFile; fileRef = D22CAB4D111CB0F900C76A5A /* TestUnifiedTestCaseRunResult.m */; };
+		D207D908111CEA4100094C32 /* TestUnifiedTestListener.h in Headers */ = {isa = PBXBuildFile; fileRef = D22CAB4E111CB0F900C76A5A /* TestUnifiedTestListener.h */; };
+		D207D909111CEA4100094C32 /* TestUnifiedTestListener.m in Sources */ = {isa = PBXBuildFile; fileRef = D22CAB4F111CB0F900C76A5A /* TestUnifiedTestListener.m */; };
+		D292D1170FFBFD64006CC56C /* libxmlHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = D292D0EC0FFBFD63006CC56C /* libxmlHelpers.h */; };
+		D292D1180FFBFD64006CC56C /* libxmlHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = D292D0ED0FFBFD63006CC56C /* libxmlHelpers.m */; };
+		D292D11E0FFBFD64006CC56C /* RunResultsStatusBar.h in Headers */ = {isa = PBXBuildFile; fileRef = D292D0F50FFBFD63006CC56C /* RunResultsStatusBar.h */; };
+		D292D11F0FFBFD64006CC56C /* RunResultsStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D292D0F60FFBFD63006CC56C /* RunResultsStatusBar.m */; };
+		D292D1200FFBFD64006CC56C /* TestCaseFiles.h in Headers */ = {isa = PBXBuildFile; fileRef = D292D1030FFBFD64006CC56C /* TestCaseFiles.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D292D1210FFBFD64006CC56C /* TestCaseFiles.m in Sources */ = {isa = PBXBuildFile; fileRef = D292D1040FFBFD64006CC56C /* TestCaseFiles.m */; };
+		D292D1230FFBFD64006CC56C /* UnifiedSuiteRunResults.h in Headers */ = {isa = PBXBuildFile; fileRef = D292D10C0FFBFD64006CC56C /* UnifiedSuiteRunResults.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D292D1240FFBFD64006CC56C /* UnifiedSuiteRunResults.m in Sources */ = {isa = PBXBuildFile; fileRef = D292D10D0FFBFD64006CC56C /* UnifiedSuiteRunResults.m */; };
+		D292D1250FFBFD64006CC56C /* UnifiedTestCaseRunResult.h in Headers */ = {isa = PBXBuildFile; fileRef = D292D10E0FFBFD64006CC56C /* UnifiedTestCaseRunResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D292D1260FFBFD64006CC56C /* UnifiedTestCaseRunResult.m in Sources */ = {isa = PBXBuildFile; fileRef = D292D10F0FFBFD64006CC56C /* UnifiedTestCaseRunResult.m */; };
+		D292D1270FFBFD64006CC56C /* UnifiedTestListener.h in Headers */ = {isa = PBXBuildFile; fileRef = D292D1100FFBFD64006CC56C /* UnifiedTestListener.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D292D1280FFBFD64006CC56C /* UnifiedTestListener.m in Sources */ = {isa = PBXBuildFile; fileRef = D292D1110FFBFD64006CC56C /* UnifiedTestListener.m */; };
+		D292D1930FFC00F3006CC56C /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D292D1920FFC00F3006CC56C /* SenTestingKit.framework */; };
+		D292D1BB0FFC045F006CC56C /* UnitTestRunnerResources.h in Headers */ = {isa = PBXBuildFile; fileRef = D292D1B90FFC045F006CC56C /* UnitTestRunnerResources.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D292D1BC0FFC045F006CC56C /* UnitTestRunnerResources.m in Sources */ = {isa = PBXBuildFile; fileRef = D292D1BA0FFC045F006CC56C /* UnitTestRunnerResources.m */; };
+		D292D1D70FFC054E006CC56C /* TestRunResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D292D1080FFBFD64006CC56C /* TestRunResultCell.xib */; };
+		D292D1D80FFC054E006CC56C /* TestSuiteRunResults.xib in Resources */ = {isa = PBXBuildFile; fileRef = D292D10B0FFBFD64006CC56C /* TestSuiteRunResults.xib */; };
+		D292D1D90FFC054E006CC56C /* TestSucceeded.png in Resources */ = {isa = PBXBuildFile; fileRef = D292D1090FFBFD64006CC56C /* TestSucceeded.png */; };
+		D292D1DA0FFC054E006CC56C /* TestFailed.png in Resources */ = {isa = PBXBuildFile; fileRef = D292D1050FFBFD64006CC56C /* TestFailed.png */; };
+		D292D1FD0FFC06E2006CC56C /* BogusResourceBundleSourceFile.m in Sources */ = {isa = PBXBuildFile; fileRef = D292D1FA0FFC069D006CC56C /* BogusResourceBundleSourceFile.m */; };
+		D292D3970FFC1639006CC56C /* TestSuiteResultViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = D292D0E30FFBFD50006CC56C /* TestSuiteResultViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D29DEC000FFD4682008EB8DB /* TestSuiteResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D292D0E40FFBFD50006CC56C /* TestSuiteResultViewController.m */; };
+		D29DEC1F0FFD47B9008EB8DB /* RunResultsStatusBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = D292D0DE0FFBFD50006CC56C /* RunResultsStatusBarController.m */; };
+		D29DEC2A0FFD47D0008EB8DB /* TestRunResultCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D292D0E00FFBFD50006CC56C /* TestRunResultCell.m */; };
+		D29DEC2B0FFD47D8008EB8DB /* ThreadedTestKitSuite.m in Sources */ = {isa = PBXBuildFile; fileRef = D292D0E60FFBFD50006CC56C /* ThreadedTestKitSuite.m */; };
+		D29DEC3F0FFD4864008EB8DB /* TestRunResultsDialog.xib in Resources */ = {isa = PBXBuildFile; fileRef = D29DEC3E0FFD4864008EB8DB /* TestRunResultsDialog.xib */; };
+		D29DEC450FFD4AF7008EB8DB /* TestRunResultsDialog.h in Headers */ = {isa = PBXBuildFile; fileRef = D29DEC430FFD4AF7008EB8DB /* TestRunResultsDialog.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D29DEC460FFD4AF7008EB8DB /* TestRunResultsDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = D29DEC440FFD4AF7008EB8DB /* TestRunResultsDialog.m */; };
+		D2EAB5B3103D93F20010AB68 /* UnitTestRunner.h in Headers */ = {isa = PBXBuildFile; fileRef = D2EAB5B2103D93F20010AB68 /* UnitTestRunner.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D2EAB5D8103D95DC0010AB68 /* ThreadedTestKitSuite.h in Headers */ = {isa = PBXBuildFile; fileRef = D292D0E50FFBFD50006CC56C /* ThreadedTestKitSuite.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D292D1F20FFC0623006CC56C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 95F293410EB78218004959A4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D292D1C20FFC049E006CC56C;
+			remoteInfo = UnitTestRunnerResources;
+		};
+		D292D2100FFC078A006CC56C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 95F293410EB78218004959A4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 95F2935A0EB7824A004959A4;
+			remoteInfo = UnitTestRunnerLib;
+		};
+		D292D2120FFC078C006CC56C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 95F293410EB78218004959A4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D292D1EE0FFC061D006CC56C;
+			remoteInfo = TestRunnerResourceScrubber;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		95F2935B0EB7824A004959A4 /* libUnitTestRunner.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libUnitTestRunner.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D22CAB4A111CB0F900C76A5A /* TestUnifiedSuiteRunResults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestUnifiedSuiteRunResults.h; sourceTree = "<group>"; };
+		D22CAB4B111CB0F900C76A5A /* TestUnifiedSuiteRunResults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestUnifiedSuiteRunResults.m; sourceTree = "<group>"; };
+		D22CAB4C111CB0F900C76A5A /* TestUnifiedTestCaseRunResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestUnifiedTestCaseRunResult.h; sourceTree = "<group>"; };
+		D22CAB4D111CB0F900C76A5A /* TestUnifiedTestCaseRunResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestUnifiedTestCaseRunResult.m; sourceTree = "<group>"; };
+		D22CAB4E111CB0F900C76A5A /* TestUnifiedTestListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestUnifiedTestListener.h; sourceTree = "<group>"; };
+		D22CAB4F111CB0F900C76A5A /* TestUnifiedTestListener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestUnifiedTestListener.m; sourceTree = "<group>"; };
+		D292D0DD0FFBFD50006CC56C /* RunResultsStatusBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunResultsStatusBarController.h; sourceTree = "<group>"; };
+		D292D0DE0FFBFD50006CC56C /* RunResultsStatusBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunResultsStatusBarController.m; sourceTree = "<group>"; };
+		D292D0DF0FFBFD50006CC56C /* TestRunResultCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestRunResultCell.h; sourceTree = "<group>"; };
+		D292D0E00FFBFD50006CC56C /* TestRunResultCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestRunResultCell.m; sourceTree = "<group>"; };
+		D292D0E30FFBFD50006CC56C /* TestSuiteResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestSuiteResultViewController.h; sourceTree = "<group>"; };
+		D292D0E40FFBFD50006CC56C /* TestSuiteResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestSuiteResultViewController.m; sourceTree = "<group>"; };
+		D292D0E50FFBFD50006CC56C /* ThreadedTestKitSuite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreadedTestKitSuite.h; sourceTree = "<group>"; };
+		D292D0E60FFBFD50006CC56C /* ThreadedTestKitSuite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreadedTestKitSuite.m; sourceTree = "<group>"; };
+		D292D0EC0FFBFD63006CC56C /* libxmlHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libxmlHelpers.h; sourceTree = "<group>"; };
+		D292D0ED0FFBFD63006CC56C /* libxmlHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = libxmlHelpers.m; sourceTree = "<group>"; };
+		D292D0F50FFBFD63006CC56C /* RunResultsStatusBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunResultsStatusBar.h; sourceTree = "<group>"; };
+		D292D0F60FFBFD63006CC56C /* RunResultsStatusBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunResultsStatusBar.m; sourceTree = "<group>"; };
+		D292D1030FFBFD64006CC56C /* TestCaseFiles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCaseFiles.h; sourceTree = "<group>"; };
+		D292D1040FFBFD64006CC56C /* TestCaseFiles.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestCaseFiles.m; sourceTree = "<group>"; };
+		D292D1050FFBFD64006CC56C /* TestFailed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TestFailed.png; sourceTree = "<group>"; };
+		D292D1080FFBFD64006CC56C /* TestRunResultCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestRunResultCell.xib; sourceTree = "<group>"; };
+		D292D1090FFBFD64006CC56C /* TestSucceeded.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TestSucceeded.png; sourceTree = "<group>"; };
+		D292D10B0FFBFD64006CC56C /* TestSuiteRunResults.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestSuiteRunResults.xib; sourceTree = "<group>"; };
+		D292D10C0FFBFD64006CC56C /* UnifiedSuiteRunResults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnifiedSuiteRunResults.h; sourceTree = "<group>"; };
+		D292D10D0FFBFD64006CC56C /* UnifiedSuiteRunResults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnifiedSuiteRunResults.m; sourceTree = "<group>"; };
+		D292D10E0FFBFD64006CC56C /* UnifiedTestCaseRunResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnifiedTestCaseRunResult.h; sourceTree = "<group>"; };
+		D292D10F0FFBFD64006CC56C /* UnifiedTestCaseRunResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnifiedTestCaseRunResult.m; sourceTree = "<group>"; };
+		D292D1100FFBFD64006CC56C /* UnifiedTestListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnifiedTestListener.h; sourceTree = "<group>"; };
+		D292D1110FFBFD64006CC56C /* UnifiedTestListener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnifiedTestListener.m; sourceTree = "<group>"; };
+		D292D1920FFC00F3006CC56C /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		D292D1B90FFC045F006CC56C /* UnitTestRunnerResources.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnitTestRunnerResources.h; sourceTree = "<group>"; };
+		D292D1BA0FFC045F006CC56C /* UnitTestRunnerResources.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnitTestRunnerResources.m; sourceTree = "<group>"; };
+		D292D1C30FFC049E006CC56C /* UnitTestRunnerResources.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTestRunnerResources.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		D292D1C40FFC049E006CC56C /* UnitTestRunnerResources-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UnitTestRunnerResources-Info.plist"; sourceTree = "<group>"; };
+		D292D1FA0FFC069D006CC56C /* BogusResourceBundleSourceFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BogusResourceBundleSourceFile.m; sourceTree = "<group>"; };
+		D29DEC3E0FFD4864008EB8DB /* TestRunResultsDialog.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestRunResultsDialog.xib; sourceTree = "<group>"; };
+		D29DEC430FFD4AF7008EB8DB /* TestRunResultsDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestRunResultsDialog.h; sourceTree = "<group>"; };
+		D29DEC440FFD4AF7008EB8DB /* TestRunResultsDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestRunResultsDialog.m; sourceTree = "<group>"; };
+		D2EAB5B2103D93F20010AB68 /* UnitTestRunner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnitTestRunner.h; sourceTree = "<group>"; };
+		D2FC1C9A100B93D100D4B59A /* UTRFramework-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UTRFramework-Info.plist"; sourceTree = "<group>"; };
+		D2FC1CF1100B962300D4B59A /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = /usr/lib/libxml2.dylib; sourceTree = "<absolute>"; };
+		D2FC1CF7100B96C100D4B59A /* UnitTestRunner.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnitTestRunner.pch; sourceTree = "<group>"; };
+		D2FC1CF8100B96FA00D4B59A /* UnitTestRunnerFeatures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnitTestRunnerFeatures.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		95F293590EB7824A004959A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D292D1930FFC00F3006CC56C /* SenTestingKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D292D1C00FFC049E006CC56C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		951878830EBA3CC8006D3F39 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				D2FC1CF1100B962300D4B59A /* libxml2.dylib */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
+		95F2933F0EB78218004959A4 = {
+			isa = PBXGroup;
+			children = (
+				D292D1920FFC00F3006CC56C /* SenTestingKit.framework */,
+				951878830EBA3CC8006D3F39 /* Dependencies */,
+				D292D1290FFBFD81006CC56C /* Resources */,
+				95F293720EB7854F004959A4 /* Source */,
+				95F2935C0EB7824A004959A4 /* Products */,
+				D292D1C40FFC049E006CC56C /* UnitTestRunnerResources-Info.plist */,
+				D2FC1C9A100B93D100D4B59A /* UTRFramework-Info.plist */,
+			);
+			sourceTree = "<group>";
+		};
+		95F2935C0EB7824A004959A4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				95F2935B0EB7824A004959A4 /* libUnitTestRunner.a */,
+				D292D1C30FFC049E006CC56C /* UnitTestRunnerResources.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		95F293720EB7854F004959A4 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				D22CAB49111CB0F900C76A5A /* UnitTests */,
+				D2FC1CAB100B944100D4B59A /* iPhone */,
+				D292D0EC0FFBFD63006CC56C /* libxmlHelpers.h */,
+				D292D0ED0FFBFD63006CC56C /* libxmlHelpers.m */,
+				D292D1030FFBFD64006CC56C /* TestCaseFiles.h */,
+				D292D1040FFBFD64006CC56C /* TestCaseFiles.m */,
+				D292D0E50FFBFD50006CC56C /* ThreadedTestKitSuite.h */,
+				D292D0E60FFBFD50006CC56C /* ThreadedTestKitSuite.m */,
+				D292D10C0FFBFD64006CC56C /* UnifiedSuiteRunResults.h */,
+				D292D10D0FFBFD64006CC56C /* UnifiedSuiteRunResults.m */,
+				D292D10E0FFBFD64006CC56C /* UnifiedTestCaseRunResult.h */,
+				D292D10F0FFBFD64006CC56C /* UnifiedTestCaseRunResult.m */,
+				D292D1100FFBFD64006CC56C /* UnifiedTestListener.h */,
+				D292D1110FFBFD64006CC56C /* UnifiedTestListener.m */,
+				D292D1B90FFC045F006CC56C /* UnitTestRunnerResources.h */,
+				D292D1BA0FFC045F006CC56C /* UnitTestRunnerResources.m */,
+				D2FC1CF7100B96C100D4B59A /* UnitTestRunner.pch */,
+				D2FC1CF8100B96FA00D4B59A /* UnitTestRunnerFeatures.h */,
+				D2EAB5B2103D93F20010AB68 /* UnitTestRunner.h */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		D22CAB49111CB0F900C76A5A /* UnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				D22CAB4A111CB0F900C76A5A /* TestUnifiedSuiteRunResults.h */,
+				D22CAB4B111CB0F900C76A5A /* TestUnifiedSuiteRunResults.m */,
+				D22CAB4C111CB0F900C76A5A /* TestUnifiedTestCaseRunResult.h */,
+				D22CAB4D111CB0F900C76A5A /* TestUnifiedTestCaseRunResult.m */,
+				D22CAB4E111CB0F900C76A5A /* TestUnifiedTestListener.h */,
+				D22CAB4F111CB0F900C76A5A /* TestUnifiedTestListener.m */,
+			);
+			path = UnitTests;
+			sourceTree = "<group>";
+		};
+		D292D1290FFBFD81006CC56C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D292D1080FFBFD64006CC56C /* TestRunResultCell.xib */,
+				D292D10B0FFBFD64006CC56C /* TestSuiteRunResults.xib */,
+				D29DEC3E0FFD4864008EB8DB /* TestRunResultsDialog.xib */,
+				D292D1090FFBFD64006CC56C /* TestSucceeded.png */,
+				D292D1050FFBFD64006CC56C /* TestFailed.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		D2FC1CAB100B944100D4B59A /* iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				D292D1FA0FFC069D006CC56C /* BogusResourceBundleSourceFile.m */,
+				D292D0DF0FFBFD50006CC56C /* TestRunResultCell.h */,
+				D292D0E00FFBFD50006CC56C /* TestRunResultCell.m */,
+				D29DEC430FFD4AF7008EB8DB /* TestRunResultsDialog.h */,
+				D29DEC440FFD4AF7008EB8DB /* TestRunResultsDialog.m */,
+				D292D0E30FFBFD50006CC56C /* TestSuiteResultViewController.h */,
+				D292D0E40FFBFD50006CC56C /* TestSuiteResultViewController.m */,
+				D292D0F50FFBFD63006CC56C /* RunResultsStatusBar.h */,
+				D292D0F60FFBFD63006CC56C /* RunResultsStatusBar.m */,
+				D292D0DD0FFBFD50006CC56C /* RunResultsStatusBarController.h */,
+				D292D0DE0FFBFD50006CC56C /* RunResultsStatusBarController.m */,
+			);
+			name = iPhone;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		95F293570EB7824A004959A4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D292D1170FFBFD64006CC56C /* libxmlHelpers.h in Headers */,
+				D292D11E0FFBFD64006CC56C /* RunResultsStatusBar.h in Headers */,
+				D292D1200FFBFD64006CC56C /* TestCaseFiles.h in Headers */,
+				D292D1230FFBFD64006CC56C /* UnifiedSuiteRunResults.h in Headers */,
+				D292D1250FFBFD64006CC56C /* UnifiedTestCaseRunResult.h in Headers */,
+				D292D1270FFBFD64006CC56C /* UnifiedTestListener.h in Headers */,
+				D292D1BB0FFC045F006CC56C /* UnitTestRunnerResources.h in Headers */,
+				D292D3970FFC1639006CC56C /* TestSuiteResultViewController.h in Headers */,
+				D29DEC450FFD4AF7008EB8DB /* TestRunResultsDialog.h in Headers */,
+				D2EAB5B3103D93F20010AB68 /* UnitTestRunner.h in Headers */,
+				D2EAB5D8103D95DC0010AB68 /* ThreadedTestKitSuite.h in Headers */,
+				D207D904111CEA4100094C32 /* TestUnifiedSuiteRunResults.h in Headers */,
+				D207D906111CEA4100094C32 /* TestUnifiedTestCaseRunResult.h in Headers */,
+				D207D908111CEA4100094C32 /* TestUnifiedTestListener.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		95F2935A0EB7824A004959A4 /* UnitTestRunnerLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95F2935F0EB7824B004959A4 /* Build configuration list for PBXNativeTarget "UnitTestRunnerLib" */;
+			buildPhases = (
+				95F293570EB7824A004959A4 /* Headers */,
+				95F293580EB7824A004959A4 /* Sources */,
+				95F293590EB7824A004959A4 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UnitTestRunnerLib;
+			productName = UnitTestRunner;
+			productReference = 95F2935B0EB7824A004959A4 /* libUnitTestRunner.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D292D1C20FFC049E006CC56C /* UnitTestRunnerResources */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D292D1C80FFC049F006CC56C /* Build configuration list for PBXNativeTarget "UnitTestRunnerResources" */;
+			buildPhases = (
+				D292D1BE0FFC049E006CC56C /* Resources */,
+				D292D1BF0FFC049E006CC56C /* Sources */,
+				D292D1C00FFC049E006CC56C /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UnitTestRunnerResources;
+			productName = UnitTestRunnerResources;
+			productReference = D292D1C30FFC049E006CC56C /* UnitTestRunnerResources.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		95F293410EB78218004959A4 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 95F293440EB78218004959A4 /* Build configuration list for PBXProject "UnitTestRunner" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 0;
+			mainGroup = 95F2933F0EB78218004959A4;
+			productRefGroup = 95F2935C0EB7824A004959A4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D292D20C0FFC0783006CC56C /* UnitTestRunner */,
+				95F2935A0EB7824A004959A4 /* UnitTestRunnerLib */,
+				D292D1C20FFC049E006CC56C /* UnitTestRunnerResources */,
+				D292D1EE0FFC061D006CC56C /* TestRunnerResourceScrubber */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D292D1BE0FFC049E006CC56C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D292D1D70FFC054E006CC56C /* TestRunResultCell.xib in Resources */,
+				D292D1D80FFC054E006CC56C /* TestSuiteRunResults.xib in Resources */,
+				D292D1D90FFC054E006CC56C /* TestSucceeded.png in Resources */,
+				D292D1DA0FFC054E006CC56C /* TestFailed.png in Resources */,
+				D29DEC3F0FFD4864008EB8DB /* TestRunResultsDialog.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D292D1F70FFC0640006CC56C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /usr/bin/ruby;
+			shellScript = "require 'FileUtils'\n\nbuild_dir = ENV[\"BUILT_PRODUCTS_DIR\"]\ndirectory_to_strip = File.join(build_dir, \"UnitTestRunnerResources.bundle\")\n\nif File.directory?(directory_to_strip) then\n\t['_CodeSignature', \"CodeResources\", \"embedded.mobileprovision\", \"UnitTestRunnerResources\", \"Info.plist\", \"ResourceRules.plist\"].each do |file_to_remove|\n\t\tFileUtils.rm_rf(File.join(directory_to_strip, file_to_remove))\n\tend\nend";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		95F293580EB7824A004959A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D292D1180FFBFD64006CC56C /* libxmlHelpers.m in Sources */,
+				D292D11F0FFBFD64006CC56C /* RunResultsStatusBar.m in Sources */,
+				D292D1210FFBFD64006CC56C /* TestCaseFiles.m in Sources */,
+				D292D1240FFBFD64006CC56C /* UnifiedSuiteRunResults.m in Sources */,
+				D292D1260FFBFD64006CC56C /* UnifiedTestCaseRunResult.m in Sources */,
+				D292D1280FFBFD64006CC56C /* UnifiedTestListener.m in Sources */,
+				D292D1BC0FFC045F006CC56C /* UnitTestRunnerResources.m in Sources */,
+				D29DEC000FFD4682008EB8DB /* TestSuiteResultViewController.m in Sources */,
+				D29DEC1F0FFD47B9008EB8DB /* RunResultsStatusBarController.m in Sources */,
+				D29DEC2A0FFD47D0008EB8DB /* TestRunResultCell.m in Sources */,
+				D29DEC2B0FFD47D8008EB8DB /* ThreadedTestKitSuite.m in Sources */,
+				D29DEC460FFD4AF7008EB8DB /* TestRunResultsDialog.m in Sources */,
+				D207D905111CEA4100094C32 /* TestUnifiedSuiteRunResults.m in Sources */,
+				D207D907111CEA4100094C32 /* TestUnifiedTestCaseRunResult.m in Sources */,
+				D207D909111CEA4100094C32 /* TestUnifiedTestListener.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D292D1BF0FFC049E006CC56C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D292D1FD0FFC06E2006CC56C /* BogusResourceBundleSourceFile.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D292D1F30FFC0623006CC56C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D292D1C20FFC049E006CC56C /* UnitTestRunnerResources */;
+			targetProxy = D292D1F20FFC0623006CC56C /* PBXContainerItemProxy */;
+		};
+		D292D2110FFC078A006CC56C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 95F2935A0EB7824A004959A4 /* UnitTestRunnerLib */;
+			targetProxy = D292D2100FFC078A006CC56C /* PBXContainerItemProxy */;
+		};
+		D292D2130FFC078C006CC56C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D292D1EE0FFC061D006CC56C /* TestRunnerResourceScrubber */;
+			targetProxy = D292D2120FFC078C006CC56C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		95F293420EB78218004959A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: SoftLayer Technologies, Inc.";
+				COPY_PHASE_STRIP = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.1.3;
+				PROVISIONING_PROFILE = "5C992E31-D868-482D-8E85-9DAAD1F9F04C";
+				SDKROOT = iphoneos4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		95F293430EB78218004959A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: SoftLayer Technologies, Inc.";
+				COPY_PHASE_STRIP = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.1.3;
+				PROVISIONING_PROFILE = "5C992E31-D868-482D-8E85-9DAAD1F9F04C";
+				SDKROOT = iphoneos3.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		95F2935D0EB7824B004959A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(FRAMEWORK_SEARCH_PATHS)",
+					"$(DEVELOPER_DIR)/Library/Frameworks",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = UnitTestRunner.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = IPHONEOS_PLATFORM;
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.1.3;
+				LIBRARY_SEARCH_PATHS = /Developer/Library/Frameworks;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-F$(SDKROOT)$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				PREBINDING = NO;
+				PRIVATE_HEADERS_FOLDER_PATH = "${PRODUCT_NAME}.${WRAPPER_EXTENSION}/PrivateHeaders";
+				PRODUCT_NAME = UnitTestRunner;
+				PROVISIONING_PROFILE = "";
+				PUBLIC_HEADERS_FOLDER_PATH = "${PRODUCT_NAME}.${WRAPPER_EXTENSION}/Headers";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		95F2935E0EB7824B004959A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(FRAMEWORK_SEARCH_PATHS)",
+					"$(DEVELOPER_DIR)/Library/Frameworks",
+				);
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = UnitTestRunner.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = IPHONEOS_PLATFORM;
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.1.3;
+				LIBRARY_SEARCH_PATHS = /Developer/Library/Frameworks;
+				PREBINDING = NO;
+				PRIVATE_HEADERS_FOLDER_PATH = "${PRODUCT_NAME}.${WRAPPER_EXTENSION}/PrivateHeaders";
+				PRODUCT_NAME = UnitTestRunner;
+				PROVISIONING_PROFILE = "";
+				PUBLIC_HEADERS_FOLDER_PATH = "${PRODUCT_NAME}.${WRAPPER_EXTENSION}/Headers";
+				SDKROOT = iphoneos3.2;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		D292D1C50FFC049F006CC56C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: SoftLayer Technologies, Inc.";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = "UnitTestRunnerResources-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.1.3;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					SenTestingKit,
+					"-framework",
+					UIKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = UnitTestRunnerResources;
+				PROVISIONING_PROFILE = "DA479BEF-F0E7-4CAA-9029-709CCFFC1A6A";
+				SDKROOT = iphonesimulator3.2;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		D292D1C60FFC049F006CC56C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				INFOPLIST_FILE = "UnitTestRunnerResources-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.1.3;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					SenTestingKit,
+					"-framework",
+					UIKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = UnitTestRunnerResources;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphonesimulator3.2;
+				WRAPPER_EXTENSION = bundle;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		D292D1EF0FFC061D006CC56C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = TestRunnerResourceScrubber;
+			};
+			name = Debug;
+		};
+		D292D1F00FFC061D006CC56C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PRODUCT_NAME = TestRunnerResourceScrubber;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		D292D20D0FFC0783006CC56C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = UnitTestRunner;
+			};
+			name = Debug;
+		};
+		D292D20E0FFC0783006CC56C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PRODUCT_NAME = UnitTestRunner;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		95F293440EB78218004959A4 /* Build configuration list for PBXProject "UnitTestRunner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95F293420EB78218004959A4 /* Debug */,
+				95F293430EB78218004959A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		95F2935F0EB7824B004959A4 /* Build configuration list for PBXNativeTarget "UnitTestRunnerLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95F2935D0EB7824B004959A4 /* Debug */,
+				95F2935E0EB7824B004959A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D292D1C80FFC049F006CC56C /* Build configuration list for PBXNativeTarget "UnitTestRunnerResources" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D292D1C50FFC049F006CC56C /* Debug */,
+				D292D1C60FFC049F006CC56C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D292D1F80FFC067F006CC56C /* Build configuration list for PBXAggregateTarget "TestRunnerResourceScrubber" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D292D1EF0FFC061D006CC56C /* Debug */,
+				D292D1F00FFC061D006CC56C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D292D21A0FFC07C0006CC56C /* Build configuration list for PBXAggregateTarget "UnitTestRunner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D292D20D0FFC0783006CC56C /* Debug */,
+				D292D20E0FFC0783006CC56C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 95F293410EB78218004959A4 /* Project object */;
+}

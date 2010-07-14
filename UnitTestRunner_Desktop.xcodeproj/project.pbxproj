@@ -1,0 +1,484 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D2FC1CA9100B943300D4B59A /* TestFailed.png in Resources */ = {isa = PBXBuildFile; fileRef = D292D1050FFBFD64006CC56C /* TestFailed.png */; };
+		D2FC1CAA100B943700D4B59A /* TestSucceeded.png in Resources */ = {isa = PBXBuildFile; fileRef = D292D1090FFBFD64006CC56C /* TestSucceeded.png */; };
+		D2FC1CB5100B947600D4B59A /* libxmlHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = D292D0EC0FFBFD63006CC56C /* libxmlHelpers.h */; };
+		D2FC1CB6100B947600D4B59A /* libxmlHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = D292D0ED0FFBFD63006CC56C /* libxmlHelpers.m */; };
+		D2FC1CB7100B947600D4B59A /* TestCaseFiles.h in Headers */ = {isa = PBXBuildFile; fileRef = D292D1030FFBFD64006CC56C /* TestCaseFiles.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D2FC1CB8100B947600D4B59A /* TestCaseFiles.m in Sources */ = {isa = PBXBuildFile; fileRef = D292D1040FFBFD64006CC56C /* TestCaseFiles.m */; };
+		D2FC1CB9100B947600D4B59A /* ThreadedTestKitSuite.h in Headers */ = {isa = PBXBuildFile; fileRef = D292D0E50FFBFD50006CC56C /* ThreadedTestKitSuite.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D2FC1CBA100B947600D4B59A /* ThreadedTestKitSuite.m in Sources */ = {isa = PBXBuildFile; fileRef = D292D0E60FFBFD50006CC56C /* ThreadedTestKitSuite.m */; };
+		D2FC1CBB100B947600D4B59A /* UnifiedSuiteRunResults.h in Headers */ = {isa = PBXBuildFile; fileRef = D292D10C0FFBFD64006CC56C /* UnifiedSuiteRunResults.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D2FC1CBC100B947600D4B59A /* UnifiedSuiteRunResults.m in Sources */ = {isa = PBXBuildFile; fileRef = D292D10D0FFBFD64006CC56C /* UnifiedSuiteRunResults.m */; };
+		D2FC1CBD100B947600D4B59A /* UnifiedTestCaseRunResult.h in Headers */ = {isa = PBXBuildFile; fileRef = D292D10E0FFBFD64006CC56C /* UnifiedTestCaseRunResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D2FC1CBE100B947600D4B59A /* UnifiedTestCaseRunResult.m in Sources */ = {isa = PBXBuildFile; fileRef = D292D10F0FFBFD64006CC56C /* UnifiedTestCaseRunResult.m */; };
+		D2FC1CBF100B947600D4B59A /* UnifiedTestListener.h in Headers */ = {isa = PBXBuildFile; fileRef = D292D1100FFBFD64006CC56C /* UnifiedTestListener.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D2FC1CC0100B947600D4B59A /* UnifiedTestListener.mm in Sources */ = {isa = PBXBuildFile; fileRef = D292D1110FFBFD64006CC56C /* UnifiedTestListener.mm */; };
+		D2FC1CC1100B947600D4B59A /* UnitTestRunnerResources.h in Headers */ = {isa = PBXBuildFile; fileRef = D292D1B90FFC045F006CC56C /* UnitTestRunnerResources.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D2FC1CC2100B947600D4B59A /* UnitTestRunnerResources.m in Sources */ = {isa = PBXBuildFile; fileRef = D292D1BA0FFC045F006CC56C /* UnitTestRunnerResources.m */; };
+		D2FC1CF2100B962300D4B59A /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D2FC1CF1100B962300D4B59A /* libxml2.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D292D1370FFBFDEA006CC56C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D292D12F0FFBFDEA006CC56C /* cxxtest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2FC3AE10F968D3E00D35E59;
+			remoteInfo = cxxtest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8DC2EF5B0486A6940098B216 /* UnitTestRunner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UnitTestRunner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D292D0DD0FFBFD50006CC56C /* RunResultsStatusBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunResultsStatusBarController.h; sourceTree = "<group>"; };
+		D292D0DE0FFBFD50006CC56C /* RunResultsStatusBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunResultsStatusBarController.m; sourceTree = "<group>"; };
+		D292D0DF0FFBFD50006CC56C /* TestRunResultCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestRunResultCell.h; sourceTree = "<group>"; };
+		D292D0E00FFBFD50006CC56C /* TestRunResultCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestRunResultCell.m; sourceTree = "<group>"; };
+		D292D0E30FFBFD50006CC56C /* TestSuiteResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestSuiteResultViewController.h; sourceTree = "<group>"; };
+		D292D0E40FFBFD50006CC56C /* TestSuiteResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestSuiteResultViewController.m; sourceTree = "<group>"; };
+		D292D0E50FFBFD50006CC56C /* ThreadedTestKitSuite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreadedTestKitSuite.h; sourceTree = "<group>"; };
+		D292D0E60FFBFD50006CC56C /* ThreadedTestKitSuite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreadedTestKitSuite.m; sourceTree = "<group>"; };
+		D292D0E70FFBFD63006CC56C /* CXXTestListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXXTestListener.h; sourceTree = "<group>"; };
+		D292D0E80FFBFD63006CC56C /* CXXTestListener.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CXXTestListener.mm; sourceTree = "<group>"; };
+		D292D0E90FFBFD63006CC56C /* CXXUnifiedTestAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXXUnifiedTestAdapter.h; sourceTree = "<group>"; };
+		D292D0EA0FFBFD63006CC56C /* CXXUnifiedTestAdapter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CXXUnifiedTestAdapter.mm; sourceTree = "<group>"; };
+		D292D0EC0FFBFD63006CC56C /* libxmlHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libxmlHelpers.h; sourceTree = "<group>"; };
+		D292D0ED0FFBFD63006CC56C /* libxmlHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = libxmlHelpers.m; sourceTree = "<group>"; };
+		D292D0F50FFBFD63006CC56C /* RunResultsStatusBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunResultsStatusBar.h; sourceTree = "<group>"; };
+		D292D0F60FFBFD63006CC56C /* RunResultsStatusBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunResultsStatusBar.m; sourceTree = "<group>"; };
+		D292D1030FFBFD64006CC56C /* TestCaseFiles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCaseFiles.h; sourceTree = "<group>"; };
+		D292D1040FFBFD64006CC56C /* TestCaseFiles.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestCaseFiles.m; sourceTree = "<group>"; };
+		D292D1050FFBFD64006CC56C /* TestFailed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TestFailed.png; sourceTree = "<group>"; };
+		D292D1080FFBFD64006CC56C /* TestRunResultCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestRunResultCell.xib; sourceTree = "<group>"; };
+		D292D1090FFBFD64006CC56C /* TestSucceeded.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TestSucceeded.png; sourceTree = "<group>"; };
+		D292D10B0FFBFD64006CC56C /* TestSuiteRunResults.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestSuiteRunResults.xib; sourceTree = "<group>"; };
+		D292D10C0FFBFD64006CC56C /* UnifiedSuiteRunResults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnifiedSuiteRunResults.h; sourceTree = "<group>"; };
+		D292D10D0FFBFD64006CC56C /* UnifiedSuiteRunResults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnifiedSuiteRunResults.m; sourceTree = "<group>"; };
+		D292D10E0FFBFD64006CC56C /* UnifiedTestCaseRunResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnifiedTestCaseRunResult.h; sourceTree = "<group>"; };
+		D292D10F0FFBFD64006CC56C /* UnifiedTestCaseRunResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnifiedTestCaseRunResult.m; sourceTree = "<group>"; };
+		D292D1100FFBFD64006CC56C /* UnifiedTestListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnifiedTestListener.h; sourceTree = "<group>"; };
+		D292D1110FFBFD64006CC56C /* UnifiedTestListener.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = UnifiedTestListener.mm; sourceTree = "<group>"; };
+		D292D12F0FFBFDEA006CC56C /* cxxtest.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = cxxtest.xcodeproj; path = ../../Thirdparty/cxxtest/iphone/cxxtest.xcodeproj; sourceTree = SOURCE_ROOT; };
+		D292D1920FFC00F3006CC56C /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = ../../../../../../Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk/Developer/Library/Frameworks/SenTestingKit.framework; sourceTree = SOURCE_ROOT; };
+		D292D1B90FFC045F006CC56C /* UnitTestRunnerResources.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnitTestRunnerResources.h; sourceTree = "<group>"; };
+		D292D1BA0FFC045F006CC56C /* UnitTestRunnerResources.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnitTestRunnerResources.m; sourceTree = "<group>"; };
+		D292D1C40FFC049E006CC56C /* UnitTestRunnerResources-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UnitTestRunnerResources-Info.plist"; sourceTree = "<group>"; };
+		D292D1FA0FFC069D006CC56C /* BogusResourceBundleSourceFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BogusResourceBundleSourceFile.m; sourceTree = "<group>"; };
+		D29DEC3E0FFD4864008EB8DB /* TestRunResultsDialog.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestRunResultsDialog.xib; sourceTree = "<group>"; };
+		D29DEC430FFD4AF7008EB8DB /* TestRunResultsDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestRunResultsDialog.h; sourceTree = "<group>"; };
+		D29DEC440FFD4AF7008EB8DB /* TestRunResultsDialog.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TestRunResultsDialog.mm; sourceTree = "<group>"; };
+		D2FC1C9A100B93D100D4B59A /* UTRFramework-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UTRFramework-Info.plist"; sourceTree = "<group>"; };
+		D2FC1CF1100B962300D4B59A /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = /usr/lib/libxml2.dylib; sourceTree = "<absolute>"; };
+		D2FC1CF7100B96C100D4B59A /* UnitTestRunner.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnitTestRunner.pch; sourceTree = "<group>"; };
+		D2FC1CF8100B96FA00D4B59A /* UnitTestRunnerFeatures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnitTestRunnerFeatures.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2FC1C98100B93D100D4B59A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2FC1CF2100B962300D4B59A /* libxml2.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		951878830EBA3CC8006D3F39 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				D2FC1CF1100B962300D4B59A /* libxml2.dylib */,
+				D292D12F0FFBFDEA006CC56C /* cxxtest.xcodeproj */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
+		95F2933F0EB78218004959A4 = {
+			isa = PBXGroup;
+			children = (
+				D292D1920FFC00F3006CC56C /* SenTestingKit.framework */,
+				951878830EBA3CC8006D3F39 /* Dependencies */,
+				D292D1290FFBFD81006CC56C /* Resources */,
+				95F293720EB7854F004959A4 /* Source */,
+				95F2935C0EB7824A004959A4 /* Products */,
+				D292D1C40FFC049E006CC56C /* UnitTestRunnerResources-Info.plist */,
+				D2FC1C9A100B93D100D4B59A /* UTRFramework-Info.plist */,
+			);
+			sourceTree = "<group>";
+		};
+		95F2935C0EB7824A004959A4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8DC2EF5B0486A6940098B216 /* UnitTestRunner.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		95F293720EB7854F004959A4 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				D2FC1CAB100B944100D4B59A /* iPhone */,
+				D292D0E70FFBFD63006CC56C /* CXXTestListener.h */,
+				D292D0E80FFBFD63006CC56C /* CXXTestListener.mm */,
+				D292D0E90FFBFD63006CC56C /* CXXUnifiedTestAdapter.h */,
+				D292D0EA0FFBFD63006CC56C /* CXXUnifiedTestAdapter.mm */,
+				D292D0EC0FFBFD63006CC56C /* libxmlHelpers.h */,
+				D292D0ED0FFBFD63006CC56C /* libxmlHelpers.m */,
+				D292D1030FFBFD64006CC56C /* TestCaseFiles.h */,
+				D292D1040FFBFD64006CC56C /* TestCaseFiles.m */,
+				D292D0E50FFBFD50006CC56C /* ThreadedTestKitSuite.h */,
+				D292D0E60FFBFD50006CC56C /* ThreadedTestKitSuite.m */,
+				D292D10C0FFBFD64006CC56C /* UnifiedSuiteRunResults.h */,
+				D292D10D0FFBFD64006CC56C /* UnifiedSuiteRunResults.m */,
+				D292D10E0FFBFD64006CC56C /* UnifiedTestCaseRunResult.h */,
+				D292D10F0FFBFD64006CC56C /* UnifiedTestCaseRunResult.m */,
+				D292D1100FFBFD64006CC56C /* UnifiedTestListener.h */,
+				D292D1110FFBFD64006CC56C /* UnifiedTestListener.mm */,
+				D292D1B90FFC045F006CC56C /* UnitTestRunnerResources.h */,
+				D292D1BA0FFC045F006CC56C /* UnitTestRunnerResources.m */,
+				D2FC1CF7100B96C100D4B59A /* UnitTestRunner.pch */,
+				D2FC1CF8100B96FA00D4B59A /* UnitTestRunnerFeatures.h */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		D292D1290FFBFD81006CC56C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D292D1080FFBFD64006CC56C /* TestRunResultCell.xib */,
+				D292D10B0FFBFD64006CC56C /* TestSuiteRunResults.xib */,
+				D29DEC3E0FFD4864008EB8DB /* TestRunResultsDialog.xib */,
+				D292D1090FFBFD64006CC56C /* TestSucceeded.png */,
+				D292D1050FFBFD64006CC56C /* TestFailed.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		D292D1300FFBFDEA006CC56C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D292D1380FFBFDEA006CC56C /* libcxxtest.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D2FC1CAB100B944100D4B59A /* iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				D292D1FA0FFC069D006CC56C /* BogusResourceBundleSourceFile.m */,
+				D292D0DF0FFBFD50006CC56C /* TestRunResultCell.h */,
+				D292D0E00FFBFD50006CC56C /* TestRunResultCell.m */,
+				D29DEC430FFD4AF7008EB8DB /* TestRunResultsDialog.h */,
+				D29DEC440FFD4AF7008EB8DB /* TestRunResultsDialog.mm */,
+				D292D0E30FFBFD50006CC56C /* TestSuiteResultViewController.h */,
+				D292D0E40FFBFD50006CC56C /* TestSuiteResultViewController.m */,
+				D292D0F50FFBFD63006CC56C /* RunResultsStatusBar.h */,
+				D292D0F60FFBFD63006CC56C /* RunResultsStatusBar.m */,
+				D292D0DD0FFBFD50006CC56C /* RunResultsStatusBarController.h */,
+				D292D0DE0FFBFD50006CC56C /* RunResultsStatusBarController.m */,
+			);
+			name = iPhone;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D2FC1C95100B93D100D4B59A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2FC1CB5100B947600D4B59A /* libxmlHelpers.h in Headers */,
+				D2FC1CB7100B947600D4B59A /* TestCaseFiles.h in Headers */,
+				D2FC1CB9100B947600D4B59A /* ThreadedTestKitSuite.h in Headers */,
+				D2FC1CBB100B947600D4B59A /* UnifiedSuiteRunResults.h in Headers */,
+				D2FC1CBD100B947600D4B59A /* UnifiedTestCaseRunResult.h in Headers */,
+				D2FC1CBF100B947600D4B59A /* UnifiedTestListener.h in Headers */,
+				D2FC1CC1100B947600D4B59A /* UnitTestRunnerResources.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D2FC1C99100B93D100D4B59A /* UnitTestRunner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2FC1CA0100B93D200D4B59A /* Build configuration list for PBXNativeTarget "UnitTestRunner" */;
+			buildPhases = (
+				D2FC1C95100B93D100D4B59A /* Headers */,
+				D2FC1C96100B93D100D4B59A /* Resources */,
+				D2FC1C97100B93D100D4B59A /* Sources */,
+				D2FC1C98100B93D100D4B59A /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UnitTestRunner;
+			productName = UTRFramework;
+			productReference = 8DC2EF5B0486A6940098B216 /* UnitTestRunner.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		95F293410EB78218004959A4 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 95F293440EB78218004959A4 /* Build configuration list for PBXProject "UnitTestRunner_Desktop" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 0;
+			mainGroup = 95F2933F0EB78218004959A4;
+			productRefGroup = 95F2935C0EB7824A004959A4 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = D292D1300FFBFDEA006CC56C /* Products */;
+					ProjectRef = D292D12F0FFBFDEA006CC56C /* cxxtest.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				D2FC1C99100B93D100D4B59A /* UnitTestRunner */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		D292D1380FFBFDEA006CC56C /* libcxxtest.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libcxxtest.a;
+			remoteRef = D292D1370FFBFDEA006CC56C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D2FC1C96100B93D100D4B59A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2FC1CA9100B943300D4B59A /* TestFailed.png in Resources */,
+				D2FC1CAA100B943700D4B59A /* TestSucceeded.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2FC1C97100B93D100D4B59A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2FC1CB6100B947600D4B59A /* libxmlHelpers.m in Sources */,
+				D2FC1CB8100B947600D4B59A /* TestCaseFiles.m in Sources */,
+				D2FC1CBA100B947600D4B59A /* ThreadedTestKitSuite.m in Sources */,
+				D2FC1CBC100B947600D4B59A /* UnifiedSuiteRunResults.m in Sources */,
+				D2FC1CBE100B947600D4B59A /* UnifiedTestCaseRunResult.m in Sources */,
+				D2FC1CC0100B947600D4B59A /* UnifiedTestListener.mm in Sources */,
+				D2FC1CC2100B947600D4B59A /* UnitTestRunnerResources.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		86E348380ECC93FF00FBF303 /* AdHoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				SDKROOT = macosx10.6;
+			};
+			name = AdHoc;
+		};
+		95F293420EB78218004959A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Debug;
+		};
+		95F293430EB78218004959A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				SDKROOT = macosx10.6;
+			};
+			name = Release;
+		};
+		D292D4120FFC1B9C006CC56C /* UnitTest */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = UnitTest;
+		};
+		D2FC1C9B100B93D200D4B59A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_DIR)/Library/Frameworks";
+				FRAMEWORK_VERSION = A;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = UnitTestRunner.pch;
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
+				INFOPLIST_FILE = "UTRFramework-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Frameworks";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+					"-framework",
+					SenTestingKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = UnitTestRunner;
+				SDKROOT = macosx10.6;
+			};
+			name = Debug;
+		};
+		D2FC1C9C100B93D200D4B59A /* UnitTest */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_DIR)/Library/Frameworks";
+				FRAMEWORK_VERSION = A;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = UnitTestRunner.pch;
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
+				INFOPLIST_FILE = "UTRFramework-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Frameworks";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+					"-framework",
+					SenTestingKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = UnitTestRunner;
+				SDKROOT = macosx10.6;
+			};
+			name = UnitTest;
+		};
+		D2FC1C9D100B93D200D4B59A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_DIR)/Library/Frameworks";
+				FRAMEWORK_VERSION = A;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = UnitTestRunner.pch;
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
+				INFOPLIST_FILE = "UTRFramework-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Frameworks";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+					"-framework",
+					SenTestingKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = UnitTestRunner;
+				SDKROOT = macosx10.6;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		D2FC1C9E100B93D200D4B59A /* AdHoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_DIR)/Library/Frameworks";
+				FRAMEWORK_VERSION = A;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = UnitTestRunner.pch;
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
+				INFOPLIST_FILE = "UTRFramework-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Frameworks";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+					"-framework",
+					SenTestingKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = UnitTestRunner;
+				SDKROOT = macosx10.6;
+			};
+			name = AdHoc;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		95F293440EB78218004959A4 /* Build configuration list for PBXProject "UnitTestRunner_Desktop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95F293420EB78218004959A4 /* Debug */,
+				D292D4120FFC1B9C006CC56C /* UnitTest */,
+				95F293430EB78218004959A4 /* Release */,
+				86E348380ECC93FF00FBF303 /* AdHoc */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D2FC1CA0100B93D200D4B59A /* Build configuration list for PBXNativeTarget "UnitTestRunner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2FC1C9B100B93D200D4B59A /* Debug */,
+				D2FC1C9C100B93D200D4B59A /* UnitTest */,
+				D2FC1C9D100B93D200D4B59A /* Release */,
+				D2FC1C9E100B93D200D4B59A /* AdHoc */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 95F293410EB78218004959A4 /* Project object */;
+}

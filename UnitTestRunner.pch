@@ -1,0 +1,23 @@
+/*
+ *  UnitTestRunner.pch
+ *  UnitTestRunner
+ *
+ *  Created by Scott Thompson on 7/13/09.
+ *  Copyright 2009 Scott Thompson. All rights reserved.
+ *
+ */
+
+#import <CoreFOundation/CoreFoundation.h>
+
+#if TARGET_OS_IPHONE
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#endif
+#else
+#ifdef __OBJC__
+#include <AppKit/AppKit.h>
+#endif
+
+#endif
+
+#include "UnitTestRunnerFeatures.h"
