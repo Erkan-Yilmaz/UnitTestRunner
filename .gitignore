@@ -1,0 +1,4 @@
+.DS_Store
+*.pbxproj/*.mode*
+*.pbxproj/*.pbxuser
+*.pbxproj/xcuserdata
