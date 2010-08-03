@@ -51,3 +51,8 @@ extern const xmlChar *kXUnit_TestCaseErrorElementName;
 /*! Generates an XML node that represents this test case result. */
 - (xmlNodePtr) createXUnitNode;
 @end
+
+#if TARGET_OS_MAC
+@interface SuccessToImage : NSValueTransformer
+@end
+#endif

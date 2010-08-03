@@ -8,6 +8,7 @@
 
 #import "UnifiedTestCaseRunResult.h"
 #import "libxmlHelpers.h"
+#import "UnitTestRunnerResources.h"
 
 const xmlChar *kXUnit_TestCaseElementName = (xmlChar *) "testcase";
 const xmlChar *kXUnit_TestCaseNameAttribute = (xmlChar *) "name";
@@ -102,3 +103,22 @@ const xmlChar *kXUnit_TestCaseErrorElementName = (xmlChar *) "error";
 }
 @end
 
+#if TARGET_OS_MAC
+@implementation SuccessToImage
++ (BOOL)allowsReverseTransformation
+{
+	return NO;
+}
+
+- (id)transformedValue:(id)value
+{
+	if([value boolValue])
+	{
+		return [UnitTestRunnerResources imageNamed: @"TestSucceeded.png"];
+	} else {
+		return [UnitTestRunnerResources imageNamed: @"TestFailed.png"];
+	}
+}
+
+@end
+#endif // TARGET_OS_MAC

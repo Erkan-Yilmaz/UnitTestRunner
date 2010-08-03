@@ -18,12 +18,16 @@
 	
 	if(nil == sharedTestRunnerResourceBundle)
 	{
+#if TARGET_OS_IPHONE
 		// Look in the main bundle for a bundle named "UnitTestRunnerResources.bundle"
 		NSString *myBundlePath = [[NSBundle mainBundle] pathForResource: @"UnitTestRunnerResources" ofType: @"bundle"];
 		if(myBundlePath)
 		{
 			sharedTestRunnerResourceBundle = [NSBundle bundleWithPath: myBundlePath];
 		}
+#else
+	sharedTestRunnerResourceBundle = [NSBundle bundleForClass: self];
+#endif
 	}
 	
 	return sharedTestRunnerResourceBundle;

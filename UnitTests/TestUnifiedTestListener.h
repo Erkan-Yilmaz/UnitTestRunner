@@ -6,7 +6,6 @@
 //  Copyright 2009 Scott Thompson. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
 #import <SenTestingKit/SenTestCase.h>
 
 @class UnifiedTestListener;

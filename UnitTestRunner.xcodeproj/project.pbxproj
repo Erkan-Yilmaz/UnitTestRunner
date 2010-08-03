@@ -55,17 +55,12 @@
 		D292D1930FFC00F3006CC56C /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D292D1920FFC00F3006CC56C /* SenTestingKit.framework */; };
 		D292D1BB0FFC045F006CC56C /* UnitTestRunnerResources.h in Headers */ = {isa = PBXBuildFile; fileRef = D292D1B90FFC045F006CC56C /* UnitTestRunnerResources.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D292D1BC0FFC045F006CC56C /* UnitTestRunnerResources.m in Sources */ = {isa = PBXBuildFile; fileRef = D292D1BA0FFC045F006CC56C /* UnitTestRunnerResources.m */; };
-		D292D1D70FFC054E006CC56C /* TestRunResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D292D1080FFBFD64006CC56C /* TestRunResultCell.xib */; };
-		D292D1D80FFC054E006CC56C /* TestSuiteRunResults.xib in Resources */ = {isa = PBXBuildFile; fileRef = D292D10B0FFBFD64006CC56C /* TestSuiteRunResults.xib */; };
-		D292D1D90FFC054E006CC56C /* TestSucceeded.png in Resources */ = {isa = PBXBuildFile; fileRef = D292D1090FFBFD64006CC56C /* TestSucceeded.png */; };
-		D292D1DA0FFC054E006CC56C /* TestFailed.png in Resources */ = {isa = PBXBuildFile; fileRef = D292D1050FFBFD64006CC56C /* TestFailed.png */; };
 		D292D1FD0FFC06E2006CC56C /* BogusResourceBundleSourceFile.m in Sources */ = {isa = PBXBuildFile; fileRef = D292D1FA0FFC069D006CC56C /* BogusResourceBundleSourceFile.m */; };
 		D292D3970FFC1639006CC56C /* TestSuiteResultViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = D292D0E30FFBFD50006CC56C /* TestSuiteResultViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D29DEC000FFD4682008EB8DB /* TestSuiteResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D292D0E40FFBFD50006CC56C /* TestSuiteResultViewController.m */; };
 		D29DEC1F0FFD47B9008EB8DB /* RunResultsStatusBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = D292D0DE0FFBFD50006CC56C /* RunResultsStatusBarController.m */; };
 		D29DEC2A0FFD47D0008EB8DB /* TestRunResultCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D292D0E00FFBFD50006CC56C /* TestRunResultCell.m */; };
 		D29DEC2B0FFD47D8008EB8DB /* ThreadedTestKitSuite.m in Sources */ = {isa = PBXBuildFile; fileRef = D292D0E60FFBFD50006CC56C /* ThreadedTestKitSuite.m */; };
-		D29DEC3F0FFD4864008EB8DB /* TestRunResultsDialog.xib in Resources */ = {isa = PBXBuildFile; fileRef = D29DEC3E0FFD4864008EB8DB /* TestRunResultsDialog.xib */; };
 		D29DEC450FFD4AF7008EB8DB /* TestRunResultsDialog.h in Headers */ = {isa = PBXBuildFile; fileRef = D29DEC430FFD4AF7008EB8DB /* TestRunResultsDialog.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D29DEC460FFD4AF7008EB8DB /* TestRunResultsDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = D29DEC440FFD4AF7008EB8DB /* TestRunResultsDialog.m */; };
 		D2EAB5B3103D93F20010AB68 /* UnitTestRunner.h in Headers */ = {isa = PBXBuildFile; fileRef = D2EAB5B2103D93F20010AB68 /* UnitTestRunner.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -98,6 +93,9 @@
 
 /* Begin PBXFileReference section */
 		95F2935B0EB7824A004959A4 /* libUnitTestRunner.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libUnitTestRunner.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2225BAB1207DCAA00CF9A0D /* TestRunResultCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = TestRunResultCell.xib; path = Resources/TestRunResultCell.xib; sourceTree = "<group>"; };
+		D2225BAC1207DCAA00CF9A0D /* TestRunResultsDialog.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = TestRunResultsDialog.xib; path = Resources/TestRunResultsDialog.xib; sourceTree = "<group>"; };
+		D2225BAD1207DCAA00CF9A0D /* TestSuiteRunResults.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = TestSuiteRunResults.xib; path = Resources/TestSuiteRunResults.xib; sourceTree = "<group>"; };
 		D22CAB4A111CB0F900C76A5A /* TestUnifiedSuiteRunResults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestUnifiedSuiteRunResults.h; sourceTree = "<group>"; };
 		D22CAB4B111CB0F900C76A5A /* TestUnifiedSuiteRunResults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestUnifiedSuiteRunResults.m; sourceTree = "<group>"; };
 		D22CAB4C111CB0F900C76A5A /* TestUnifiedTestCaseRunResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestUnifiedTestCaseRunResult.h; sourceTree = "<group>"; };
@@ -118,10 +116,6 @@
 		D292D0F60FFBFD63006CC56C /* RunResultsStatusBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunResultsStatusBar.m; sourceTree = "<group>"; };
 		D292D1030FFBFD64006CC56C /* TestCaseFiles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCaseFiles.h; sourceTree = "<group>"; };
 		D292D1040FFBFD64006CC56C /* TestCaseFiles.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestCaseFiles.m; sourceTree = "<group>"; };
-		D292D1050FFBFD64006CC56C /* TestFailed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TestFailed.png; sourceTree = "<group>"; };
-		D292D1080FFBFD64006CC56C /* TestRunResultCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestRunResultCell.xib; sourceTree = "<group>"; };
-		D292D1090FFBFD64006CC56C /* TestSucceeded.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TestSucceeded.png; sourceTree = "<group>"; };
-		D292D10B0FFBFD64006CC56C /* TestSuiteRunResults.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestSuiteRunResults.xib; sourceTree = "<group>"; };
 		D292D10C0FFBFD64006CC56C /* UnifiedSuiteRunResults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnifiedSuiteRunResults.h; sourceTree = "<group>"; };
 		D292D10D0FFBFD64006CC56C /* UnifiedSuiteRunResults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnifiedSuiteRunResults.m; sourceTree = "<group>"; };
 		D292D10E0FFBFD64006CC56C /* UnifiedTestCaseRunResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnifiedTestCaseRunResult.h; sourceTree = "<group>"; };
@@ -134,7 +128,6 @@
 		D292D1C30FFC049E006CC56C /* UnitTestRunnerResources.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTestRunnerResources.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		D292D1C40FFC049E006CC56C /* UnitTestRunnerResources-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UnitTestRunnerResources-Info.plist"; sourceTree = "<group>"; };
 		D292D1FA0FFC069D006CC56C /* BogusResourceBundleSourceFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BogusResourceBundleSourceFile.m; sourceTree = "<group>"; };
-		D29DEC3E0FFD4864008EB8DB /* TestRunResultsDialog.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestRunResultsDialog.xib; sourceTree = "<group>"; };
 		D29DEC430FFD4AF7008EB8DB /* TestRunResultsDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestRunResultsDialog.h; sourceTree = "<group>"; };
 		D29DEC440FFD4AF7008EB8DB /* TestRunResultsDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestRunResultsDialog.m; sourceTree = "<group>"; };
 		D2EAB5B2103D93F20010AB68 /* UnitTestRunner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnitTestRunner.h; sourceTree = "<group>"; };
@@ -235,11 +228,9 @@
 		D292D1290FFBFD81006CC56C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				D292D1080FFBFD64006CC56C /* TestRunResultCell.xib */,
-				D292D10B0FFBFD64006CC56C /* TestSuiteRunResults.xib */,
-				D29DEC3E0FFD4864008EB8DB /* TestRunResultsDialog.xib */,
-				D292D1090FFBFD64006CC56C /* TestSucceeded.png */,
-				D292D1050FFBFD64006CC56C /* TestFailed.png */,
+				D2225BAB1207DCAA00CF9A0D /* TestRunResultCell.xib */,
+				D2225BAC1207DCAA00CF9A0D /* TestRunResultsDialog.xib */,
+				D2225BAD1207DCAA00CF9A0D /* TestSuiteRunResults.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -349,11 +340,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D292D1D70FFC054E006CC56C /* TestRunResultCell.xib in Resources */,
-				D292D1D80FFC054E006CC56C /* TestSuiteRunResults.xib in Resources */,
-				D292D1D90FFC054E006CC56C /* TestSucceeded.png in Resources */,
-				D292D1DA0FFC054E006CC56C /* TestFailed.png in Resources */,
-				D29DEC3F0FFD4864008EB8DB /* TestRunResultsDialog.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
