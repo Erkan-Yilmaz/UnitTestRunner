@@ -40,6 +40,11 @@
 		D207D907111CEA4100094C32 /* TestUnifiedTestCaseRunResult.m in Sources */ = {isa = PBXBuildFile; fileRef = D22CAB4D111CB0F900C76A5A /* TestUnifiedTestCaseRunResult.m */; };
 		D207D908111CEA4100094C32 /* TestUnifiedTestListener.h in Headers */ = {isa = PBXBuildFile; fileRef = D22CAB4E111CB0F900C76A5A /* TestUnifiedTestListener.h */; };
 		D207D909111CEA4100094C32 /* TestUnifiedTestListener.m in Sources */ = {isa = PBXBuildFile; fileRef = D22CAB4F111CB0F900C76A5A /* TestUnifiedTestListener.m */; };
+		D28783DA120A603E001DD647 /* TestRunResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2225BAB1207DCAA00CF9A0D /* TestRunResultCell.xib */; };
+		D28783DB120A603E001DD647 /* TestRunResultsDialog.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2225BAC1207DCAA00CF9A0D /* TestRunResultsDialog.xib */; };
+		D28783DC120A603E001DD647 /* TestSuiteRunResults.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2225BAD1207DCAA00CF9A0D /* TestSuiteRunResults.xib */; };
+		D28783ED120A6095001DD647 /* TestFailed.png in Resources */ = {isa = PBXBuildFile; fileRef = D28783EB120A6095001DD647 /* TestFailed.png */; };
+		D28783EE120A6095001DD647 /* TestSucceeded.png in Resources */ = {isa = PBXBuildFile; fileRef = D28783EC120A6095001DD647 /* TestSucceeded.png */; };
 		D292D1170FFBFD64006CC56C /* libxmlHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = D292D0EC0FFBFD63006CC56C /* libxmlHelpers.h */; };
 		D292D1180FFBFD64006CC56C /* libxmlHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = D292D0ED0FFBFD63006CC56C /* libxmlHelpers.m */; };
 		D292D11E0FFBFD64006CC56C /* RunResultsStatusBar.h in Headers */ = {isa = PBXBuildFile; fileRef = D292D0F50FFBFD63006CC56C /* RunResultsStatusBar.h */; };
@@ -102,6 +107,8 @@
 		D22CAB4D111CB0F900C76A5A /* TestUnifiedTestCaseRunResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestUnifiedTestCaseRunResult.m; sourceTree = "<group>"; };
 		D22CAB4E111CB0F900C76A5A /* TestUnifiedTestListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestUnifiedTestListener.h; sourceTree = "<group>"; };
 		D22CAB4F111CB0F900C76A5A /* TestUnifiedTestListener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestUnifiedTestListener.m; sourceTree = "<group>"; };
+		D28783EB120A6095001DD647 /* TestFailed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TestFailed.png; path = Resources/TestFailed.png; sourceTree = "<group>"; };
+		D28783EC120A6095001DD647 /* TestSucceeded.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TestSucceeded.png; path = Resources/TestSucceeded.png; sourceTree = "<group>"; };
 		D292D0DD0FFBFD50006CC56C /* RunResultsStatusBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunResultsStatusBarController.h; sourceTree = "<group>"; };
 		D292D0DE0FFBFD50006CC56C /* RunResultsStatusBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunResultsStatusBarController.m; sourceTree = "<group>"; };
 		D292D0DF0FFBFD50006CC56C /* TestRunResultCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestRunResultCell.h; sourceTree = "<group>"; };
@@ -228,6 +235,8 @@
 		D292D1290FFBFD81006CC56C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D28783EB120A6095001DD647 /* TestFailed.png */,
+				D28783EC120A6095001DD647 /* TestSucceeded.png */,
 				D2225BAB1207DCAA00CF9A0D /* TestRunResultCell.xib */,
 				D2225BAC1207DCAA00CF9A0D /* TestRunResultsDialog.xib */,
 				D2225BAD1207DCAA00CF9A0D /* TestSuiteRunResults.xib */,
@@ -340,6 +349,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D28783DA120A603E001DD647 /* TestRunResultCell.xib in Resources */,
+				D28783DB120A603E001DD647 /* TestRunResultsDialog.xib in Resources */,
+				D28783DC120A603E001DD647 /* TestSuiteRunResults.xib in Resources */,
+				D28783ED120A6095001DD647 /* TestFailed.png in Resources */,
+				D28783EE120A6095001DD647 /* TestSucceeded.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
