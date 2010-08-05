@@ -3,7 +3,7 @@
  *  MXServerConnect
  *
  *  Created by Scott Thompson on 5/11/09.
- *  Copyright 2009 QuickOffice, Inc.. All rights reserved.
+ *  Copyright 2009 Scott Thompson. All rights reserved.
  *
  */
 

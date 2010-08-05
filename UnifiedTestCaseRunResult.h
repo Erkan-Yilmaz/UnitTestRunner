@@ -1,5 +1,5 @@
 /*!
-    @file	UnifiedTestCaseRunResult
+  @file	UnifiedTestCaseRunResult
 	@brief	Declares the UnifiedTestCaseRunResult class.
 */
 

@@ -3,7 +3,7 @@
 //  TopicSpace
 //
 //  Created by Scott Thompson on 7/10/09.
-//  Copyright 2009 Turing Complete, LLC. All rights reserved.
+//  Copyright 2009 Scott Thompson All rights reserved.
 //
 
 #import <SenTestingKit/SenTestingKit.h>

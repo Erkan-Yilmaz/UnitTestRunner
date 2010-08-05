@@ -1,6 +1,6 @@
 //
 //  TestCaseFiles.mm
-//  QuickAccess
+//  UnitTestRunner
 //
 //  Created by Scott Thompson on 6/30/08.
 //  Copyright 2008 Scott Thompson. All rights reserved.

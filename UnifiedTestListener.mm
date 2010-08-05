@@ -1,9 +1,9 @@
 //
 //  UnifiedTestListener.mm
-//  QuickAccess
+//  UnitTestRunner
 //
 //  Created by Scott Thompson on 7/9/08.
-//  Copyright 2008 Turing Complete, LLC. All rights reserved.
+//  Copyright 2008 Scott Thompson All rights reserved.
 //
 
 #import "UnifiedTestListener.h"

@@ -1,9 +1,9 @@
 //
 //  main.m
-//  QuickAccess
+//  UnitTestRunner
 //
 //  Created by Scott Thompson on 5/19/08.
-//  Copyright QuickOffice, Inc. 2008. All rights reserved.
+//  Copyright Scott Thompson 2008. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
