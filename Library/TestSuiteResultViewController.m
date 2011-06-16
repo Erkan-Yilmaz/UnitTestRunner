@@ -180,7 +180,7 @@
 	[self filterResultsWithString: searchText];
 }
 
-- (void)searchBarSearchButtonClicked: (UISearchBar *) _searchBar;
+- (void) searchBarSearchButtonClicked: (UISearchBar *) _searchBar;
 {
 	[_searchBar resignFirstResponder];
 }

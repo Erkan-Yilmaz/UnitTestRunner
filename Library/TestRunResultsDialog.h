@@ -18,18 +18,9 @@
 - (void) testRunResultsDialogDone: (TestRunResultsDialog *) dialogThatisDone;
 @end
 
-@interface TestRunResultsDialog : UIViewController 
-{
-	TestSuiteResultViewController *testResultsViewController;
-	id <NSObject, TestRunResultsDialogDelegate> delegate;
+@interface TestRunResultsDialog : UINavigationController
 
-	UINavigationBar *navBar;
-	UIBarButtonItem	*doneButton;
-}
-
-@property (nonatomic, retain) id <NSObject, TestRunResultsDialogDelegate> delegate;
-
-@property (nonatomic, retain) IBOutlet UINavigationBar	*navBar;
+@property (nonatomic, assign) id <NSObject, TestRunResultsDialogDelegate> delegate;
 @property (nonatomic, retain) IBOutlet UIBarButtonItem	*doneButton;
 
 + (TestRunResultsDialog *) createRunResultsDialogWithDelegate: (id <NSObject, TestRunResultsDialogDelegate>) delegate;

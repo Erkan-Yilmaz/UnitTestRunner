@@ -13,40 +13,51 @@
 #import "UnifiedTestListener.h"
 #import "ThreadedTestKitSuite.h"
 
+@interface TestRunResultsDialog ()
+@property (nonatomic, readwrite, retain) TestSuiteResultViewController *testResultsViewController;
+@end
+
 @implementation TestRunResultsDialog
 
 @synthesize delegate;
-@synthesize navBar;
 @synthesize doneButton;
+@synthesize testResultsViewController;
 
 + (TestRunResultsDialog *) createRunResultsDialogWithDelegate: (id <NSObject, TestRunResultsDialogDelegate>) delegate
 {
-	TestRunResultsDialog *testResultsViewer = [[TestRunResultsDialog alloc] initWithNibName: @"TestRunResultsDialog"
-																					 bundle: [UnitTestRunnerResources resourceBundle]];
-	testResultsViewer.delegate = delegate;
-	return [testResultsViewer autorelease];
+	TestSuiteResultViewController *testResultsViewController = [[TestSuiteResultViewController alloc] initWithNibName: @"TestSuiteRunResults" bundle: [UnitTestRunnerResources resourceBundle]];    
+	TestRunResultsDialog *testResultsDialog = [[TestRunResultsDialog alloc] initWithRootViewController: testResultsViewController];
+
+    UIBarButtonItem *doneButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem: UIBarButtonSystemItemDone target: testResultsDialog action: @selector(closeDialog:)];
+    testResultsViewController.navigationItem.rightBarButtonItem = doneButton;
+    testResultsViewController.navigationItem.title = @"Unit Test Runner";
+
+    testResultsDialog.testResultsViewController = testResultsViewController;
+    testResultsDialog.doneButton = doneButton;
+
+    [testResultsViewController release];
+    [doneButton release];
+
+	testResultsDialog.delegate = delegate;
+
+	return [testResultsDialog autorelease];
+}
+
+- (void) dealloc
+{
+	self.doneButton = nil;
+    self.testResultsViewController = nil;
+
+    [super dealloc];
 }
 
 - (void) viewDidLoad
 {
-	testResultsViewController =
-		[[TestSuiteResultViewController alloc] initWithNibName: @"TestSuiteRunResults" bundle: [UnitTestRunnerResources resourceBundle]];
-
-	testResultsViewController.view.frame = CGRectMake(	CGRectGetMinX(self.view.frame),
-														CGRectGetMaxY(navBar.frame),
-														self.view.frame.size.width,
-														self.view.frame.size.height - navBar.frame.size.height);
-
-	[self.view addSubview: testResultsViewController.view];
 }
 
-
-- (void)dealloc
+- (BOOL) shouldAutorotateToInterfaceOrientation: (UIInterfaceOrientation) toInterfaceOrientation
 {
-	self.doneButton = nil;
-	self.navBar = nil;
-
-    [super dealloc];
+    return YES;
 }
 
 - (IBAction) closeDialog: (id) sender
@@ -96,7 +107,7 @@
 
 - (void) threadedTestRunFinishedWithResults: (UnifiedSuiteRunResults *) runResults
 {
-	testResultsViewController.runResults = runResults;
+	self.testResultsViewController.runResults = runResults;
 #if 0
 	// Put the XML doc out to stdout
 	xmlDocPtr outputDoc = [runResults createXUnitDoc];

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 45;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXAggregateTarget section */
@@ -41,7 +41,6 @@
 		D207D908111CEA4100094C32 /* TestUnifiedTestListener.h in Headers */ = {isa = PBXBuildFile; fileRef = D22CAB4E111CB0F900C76A5A /* TestUnifiedTestListener.h */; };
 		D207D909111CEA4100094C32 /* TestUnifiedTestListener.m in Sources */ = {isa = PBXBuildFile; fileRef = D22CAB4F111CB0F900C76A5A /* TestUnifiedTestListener.m */; };
 		D28783DA120A603E001DD647 /* TestRunResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2225BAB1207DCAA00CF9A0D /* TestRunResultCell.xib */; };
-		D28783DB120A603E001DD647 /* TestRunResultsDialog.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2225BAC1207DCAA00CF9A0D /* TestRunResultsDialog.xib */; };
 		D28783DC120A603E001DD647 /* TestSuiteRunResults.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2225BAD1207DCAA00CF9A0D /* TestSuiteRunResults.xib */; };
 		D28783ED120A6095001DD647 /* TestFailed.png in Resources */ = {isa = PBXBuildFile; fileRef = D28783EB120A6095001DD647 /* TestFailed.png */; };
 		D28783EE120A6095001DD647 /* TestSucceeded.png in Resources */ = {isa = PBXBuildFile; fileRef = D28783EC120A6095001DD647 /* TestSucceeded.png */; };
@@ -57,7 +56,6 @@
 		D292D1260FFBFD64006CC56C /* UnifiedTestCaseRunResult.m in Sources */ = {isa = PBXBuildFile; fileRef = D292D10F0FFBFD64006CC56C /* UnifiedTestCaseRunResult.m */; };
 		D292D1270FFBFD64006CC56C /* UnifiedTestListener.h in Headers */ = {isa = PBXBuildFile; fileRef = D292D1100FFBFD64006CC56C /* UnifiedTestListener.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D292D1280FFBFD64006CC56C /* UnifiedTestListener.m in Sources */ = {isa = PBXBuildFile; fileRef = D292D1110FFBFD64006CC56C /* UnifiedTestListener.m */; };
-		D292D1930FFC00F3006CC56C /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D292D1920FFC00F3006CC56C /* SenTestingKit.framework */; };
 		D292D1BB0FFC045F006CC56C /* UnitTestRunnerResources.h in Headers */ = {isa = PBXBuildFile; fileRef = D292D1B90FFC045F006CC56C /* UnitTestRunnerResources.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D292D1BC0FFC045F006CC56C /* UnitTestRunnerResources.m in Sources */ = {isa = PBXBuildFile; fileRef = D292D1BA0FFC045F006CC56C /* UnitTestRunnerResources.m */; };
 		D292D1FD0FFC06E2006CC56C /* BogusResourceBundleSourceFile.m in Sources */ = {isa = PBXBuildFile; fileRef = D292D1FA0FFC069D006CC56C /* BogusResourceBundleSourceFile.m */; };
@@ -99,7 +97,6 @@
 /* Begin PBXFileReference section */
 		95F2935B0EB7824A004959A4 /* libUnitTestRunner.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libUnitTestRunner.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2225BAB1207DCAA00CF9A0D /* TestRunResultCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = TestRunResultCell.xib; path = Resources/TestRunResultCell.xib; sourceTree = "<group>"; };
-		D2225BAC1207DCAA00CF9A0D /* TestRunResultsDialog.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = TestRunResultsDialog.xib; path = Resources/TestRunResultsDialog.xib; sourceTree = "<group>"; };
 		D2225BAD1207DCAA00CF9A0D /* TestSuiteRunResults.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = TestSuiteRunResults.xib; path = Resources/TestSuiteRunResults.xib; sourceTree = "<group>"; };
 		D22CAB4A111CB0F900C76A5A /* TestUnifiedSuiteRunResults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestUnifiedSuiteRunResults.h; sourceTree = "<group>"; };
 		D22CAB4B111CB0F900C76A5A /* TestUnifiedSuiteRunResults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestUnifiedSuiteRunResults.m; sourceTree = "<group>"; };
@@ -129,7 +126,6 @@
 		D292D10F0FFBFD64006CC56C /* UnifiedTestCaseRunResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnifiedTestCaseRunResult.m; sourceTree = "<group>"; };
 		D292D1100FFBFD64006CC56C /* UnifiedTestListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnifiedTestListener.h; sourceTree = "<group>"; };
 		D292D1110FFBFD64006CC56C /* UnifiedTestListener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnifiedTestListener.m; sourceTree = "<group>"; };
-		D292D1920FFC00F3006CC56C /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		D292D1B90FFC045F006CC56C /* UnitTestRunnerResources.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnitTestRunnerResources.h; sourceTree = "<group>"; };
 		D292D1BA0FFC045F006CC56C /* UnitTestRunnerResources.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnitTestRunnerResources.m; sourceTree = "<group>"; };
 		D292D1C30FFC049E006CC56C /* UnitTestRunnerResources.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTestRunnerResources.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -139,7 +135,6 @@
 		D29DEC440FFD4AF7008EB8DB /* TestRunResultsDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestRunResultsDialog.m; sourceTree = "<group>"; };
 		D2EAB5B2103D93F20010AB68 /* UnitTestRunner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnitTestRunner.h; sourceTree = "<group>"; };
 		D2FC1C9A100B93D100D4B59A /* UTRFramework-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UTRFramework-Info.plist"; sourceTree = "<group>"; };
-		D2FC1CF1100B962300D4B59A /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = /usr/lib/libxml2.dylib; sourceTree = "<absolute>"; };
 		D2FC1CF7100B96C100D4B59A /* UnitTestRunner.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnitTestRunner.pch; sourceTree = "<group>"; };
 		D2FC1CF8100B96FA00D4B59A /* UnitTestRunnerFeatures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnitTestRunnerFeatures.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -149,7 +144,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D292D1930FFC00F3006CC56C /* SenTestingKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,21 +157,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		951878830EBA3CC8006D3F39 /* Dependencies */ = {
-			isa = PBXGroup;
-			children = (
-				D2FC1CF1100B962300D4B59A /* libxml2.dylib */,
-			);
-			name = Dependencies;
-			sourceTree = "<group>";
-		};
 		95F2933F0EB78218004959A4 = {
 			isa = PBXGroup;
 			children = (
-				D292D1920FFC00F3006CC56C /* SenTestingKit.framework */,
-				951878830EBA3CC8006D3F39 /* Dependencies */,
-				D292D1290FFBFD81006CC56C /* Resources */,
 				95F293720EB7854F004959A4 /* Source */,
+				D292D1290FFBFD81006CC56C /* Resources */,
+				D2AE879213A9A9C600DE20C5 /* Libraries and Frameworks */,
 				95F2935C0EB7824A004959A4 /* Products */,
 				D292D1C40FFC049E006CC56C /* UnitTestRunnerResources-Info.plist */,
 				D2FC1C9A100B93D100D4B59A /* UTRFramework-Info.plist */,
@@ -238,10 +223,16 @@
 				D28783EB120A6095001DD647 /* TestFailed.png */,
 				D28783EC120A6095001DD647 /* TestSucceeded.png */,
 				D2225BAB1207DCAA00CF9A0D /* TestRunResultCell.xib */,
-				D2225BAC1207DCAA00CF9A0D /* TestRunResultsDialog.xib */,
 				D2225BAD1207DCAA00CF9A0D /* TestSuiteRunResults.xib */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		D2AE879213A9A9C600DE20C5 /* Libraries and Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Libraries and Frameworks";
 			sourceTree = "<group>";
 		};
 		D2FC1CAB100B944100D4B59A /* iPhone */ = {
@@ -328,9 +319,16 @@
 /* Begin PBXProject section */
 		95F293410EB78218004959A4 /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
 			buildConfigurationList = 95F293440EB78218004959A4 /* Build configuration list for PBXProject "UnitTestRunner" */;
-			compatibilityVersion = "Xcode 3.1";
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
 			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
 			mainGroup = 95F2933F0EB78218004959A4;
 			productRefGroup = 95F2935C0EB7824A004959A4 /* Products */;
 			projectDirPath = "";
@@ -350,7 +348,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D28783DA120A603E001DD647 /* TestRunResultCell.xib in Resources */,
-				D28783DB120A603E001DD647 /* TestRunResultsDialog.xib in Resources */,
 				D28783DC120A603E001DD647 /* TestSuiteRunResults.xib in Resources */,
 				D28783ED120A6095001DD647 /* TestFailed.png in Resources */,
 				D28783EE120A6095001DD647 /* TestSucceeded.png in Resources */,
@@ -431,12 +428,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				CODE_SIGN_IDENTITY = "iPhone Distribution: SoftLayer Technologies, Inc.";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 3.1.3;
-				PROVISIONING_PROFILE = "5C992E31-D868-482D-8E85-9DAAD1F9F04C";
-				SDKROOT = iphoneos4.0;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -444,12 +441,13 @@
 		95F293430EB78218004959A4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
-				CODE_SIGN_IDENTITY = "iPhone Distribution: SoftLayer Technologies, Inc.";
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 3.1.3;
-				PROVISIONING_PROFILE = "5C992E31-D868-482D-8E85-9DAAD1F9F04C";
-				SDKROOT = iphoneos3.2;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -457,6 +455,7 @@
 		95F2935D0EB7824B004959A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -475,11 +474,11 @@
 					"-ObjC",
 					"-F$(SDKROOT)$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
-				PREBINDING = NO;
 				PRIVATE_HEADERS_FOLDER_PATH = "${PRODUCT_NAME}.${WRAPPER_EXTENSION}/PrivateHeaders";
 				PRODUCT_NAME = UnitTestRunner;
 				PROVISIONING_PROFILE = "";
 				PUBLIC_HEADERS_FOLDER_PATH = "${PRODUCT_NAME}.${WRAPPER_EXTENSION}/Headers";
+				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = framework;
 			};
 			name = Debug;
@@ -487,6 +486,7 @@
 		95F2935E0EB7824B004959A4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -494,19 +494,17 @@
 					"$(FRAMEWORK_SEARCH_PATHS)",
 					"$(DEVELOPER_DIR)/Library/Frameworks",
 				);
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = UnitTestRunner.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = IPHONEOS_PLATFORM;
 				HEADER_SEARCH_PATHS = /usr/include/libxml2;
 				IPHONEOS_DEPLOYMENT_TARGET = 3.1.3;
 				LIBRARY_SEARCH_PATHS = /Developer/Library/Frameworks;
-				PREBINDING = NO;
 				PRIVATE_HEADERS_FOLDER_PATH = "${PRODUCT_NAME}.${WRAPPER_EXTENSION}/PrivateHeaders";
 				PRODUCT_NAME = UnitTestRunner;
 				PROVISIONING_PROFILE = "";
 				PUBLIC_HEADERS_FOLDER_PATH = "${PRODUCT_NAME}.${WRAPPER_EXTENSION}/Headers";
-				SDKROOT = iphoneos3.2;
+				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = framework;
 			};
 			name = Release;
@@ -519,9 +517,9 @@
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
 				INFOPLIST_FILE = "UnitTestRunnerResources-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 3.1.3;
 				OTHER_LDFLAGS = (
@@ -532,10 +530,9 @@
 					"-framework",
 					UIKit,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = UnitTestRunnerResources;
 				PROVISIONING_PROFILE = "DA479BEF-F0E7-4CAA-9029-709CCFFC1A6A";
-				SDKROOT = iphonesimulator3.2;
+				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
@@ -548,8 +545,8 @@
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
 				INFOPLIST_FILE = "UnitTestRunnerResources-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 3.1.3;
 				OTHER_LDFLAGS = (
@@ -560,10 +557,9 @@
 					"-framework",
 					UIKit,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = UnitTestRunnerResources;
 				PROVISIONING_PROFILE = "";
-				SDKROOT = iphonesimulator3.2;
+				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = NO;
 			};
@@ -584,7 +580,6 @@
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				PRODUCT_NAME = TestRunnerResourceScrubber;
 				ZERO_LINK = NO;
 			};
@@ -605,7 +600,6 @@
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				PRODUCT_NAME = UnitTestRunner;
 				ZERO_LINK = NO;
 			};
